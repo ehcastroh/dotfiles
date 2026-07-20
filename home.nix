@@ -28,9 +28,20 @@
     };
   };
 
+  programs.git = {
+    enable = true;
+    settings.user = {
+	name = "eliascasher";
+    	email = "ehcastroh@berkeley.edu";
+  	};
+  };
+
   programs.starship = {
     enable = true;
-    settings = { add_newline = false; };
+    settings = { 
+	add_newline = false;
+	format = "$directory$git_branch$git_status$cmd_duration$line_break$character";
+	};
   };
 
   home.sessionVariables = { EDITOR = "nvim"; };
