@@ -12,7 +12,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager }:
+  outputs = inputs@{ self, nixpkgs, home-manager, nixpkgs-unstable, }:
   {
     # "nixos" = your hostname (networking.hostName). Rename both together if you
     # ever change it, or pass --flake .#nixos explicitly.
