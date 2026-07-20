@@ -3,8 +3,8 @@ local config = wezterm.config_builder()
 
 config.color_scheme = "rose-pine-moon"
 config.font = wezterm.font("Hack Nerd Font")
-config.font_size = 15.0
-config.window_background_opacity = 0.80
+config.font_size = 11.0
+config.window_background_opacity = 0.90
 config.hide_tab_bar_if_only_one_tab = true
 config.window_decorations = "RESIZE"
 
