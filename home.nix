@@ -27,7 +27,8 @@
       rebuild = "~/.dotfiles/rebuild.sh";
     };
   };
-
+  
+  # ---- git ----
   programs.git = {
     enable = true;
     settings.user = {
@@ -36,12 +37,27 @@
   	};
   };
 
+  # ---- starship ----
   programs.starship = {
     enable = true;
     settings = { 
 	add_newline = false;
 	format = "$directory$git_branch$git_status$cmd_duration$line_break$character";
 	};
+  };
+
+  # ---- GNOME Keybindings ----
+  dconf.settings = {
+    "org/gnome/settings-daemon/plugins/media-keys" = {
+      custom-keybindings = [
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+      ];
+    };
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+      binding = "<Ctrl><Alt>t";
+      command = "wezterm";
+      name = "Open WezTerm";
+    };
   };
 
   home.sessionVariables = { EDITOR = "nvim"; };
