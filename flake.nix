@@ -1,4 +1,4 @@
-ke.nix
+
 {
   description = "elcasnix's agentic dev environment";
 
