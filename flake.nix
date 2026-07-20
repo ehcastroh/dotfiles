@@ -6,6 +6,7 @@
     # PINNED to a stable release — "so we don't get surprises."
     # Match the release to your existing stateVersion, then upgrade deliberately.
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
