@@ -5,6 +5,13 @@
   home.homeDirectory = "/home/elcasnix";
   home.stateVersion = "25.11";
 
+  home.packages = [ pkgs-unstable.neovim ];
+
+  assertions = [{
+    assertion = pkgs.lib.versionAtLeast pkgs-unstable.neovim.version "0.12.3";
+    message = "neovim ${pkgs-unstable.neovim.version} is below the required 0.12.3";
+  }];
+
   # ---- Symlinks: repo is the source of truth --------------------------------
   home.file.".config/wezterm".source =
     config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.dotfiles/config/wezterm";
