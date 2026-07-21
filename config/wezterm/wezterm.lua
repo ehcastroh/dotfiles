@@ -5,7 +5,7 @@ config.color_scheme = "rose-pine-moon"
 config.font = wezterm.font("Hack Nerd Font")
 config.font_size = 11.0
 config.window_background_opacity = 0.93
-config.hide_tab_bar_if_only_one_tab = true
-config.window_decorations = "TITLE | RESIZE"
+config.hide_tab_bar_if_only_one_tab = false
+config.window_decorations = "RESIZE"
 
 return config

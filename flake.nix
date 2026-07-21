@@ -25,6 +25,9 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
+          home-manager.extraSpecialArgs = {
+            pkgs-unstable = nixpkgs-unstable.legacyPackages."x86_64-linux";
+            };
           # "This is the key" — this user is managed by home.nix
           home-manager.users.elcasnix = import ./home.nix;
         }
