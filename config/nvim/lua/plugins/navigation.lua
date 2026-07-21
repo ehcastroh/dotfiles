@@ -3,7 +3,11 @@ return {
     "folke/snacks.nvim",
     priority = 2000,
     lazy = false,
-    opts = { picker = { enabled = true }, notifier = { enabled = true }, input = { enabled = true } },
+    opts = { 
+        picker = { enabled = true }, 
+        notifier = { enabled = true }, 
+        input = { enabled = true } 
+    },
     keys = {
       { "<leader>f", function() Snacks.picker.files() end,   desc = "Files" },
       { "<leader>s", function() Snacks.picker.grep() end,    desc = "Grep" },
