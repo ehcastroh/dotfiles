@@ -24,8 +24,16 @@
     config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.dotfiles/config/herdr";
   home.file.".claude/settings.json".source =
     config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.dotfiles/config/claude/settings.json";
+
+  # ---- Agent memory: one file, symlinked to every harness --------------------
   home.file.".claude/CLAUDE.md".source =
-    config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.dotfiles/home/agents.md";
+    config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.dotfiles/home/AGENTS.md";
+
+  home.file.".codex/AGENTS.md".source =
+    config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.dotfiles/home/AGENTS.md";
+
+  home.file.".config/opencode/AGENTS.md".source =
+    config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.dotfiles/home/AGENTS.md";
 
   # ---- Shell ----------------------------------------------------------------
   programs.zsh = {

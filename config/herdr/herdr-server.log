@@ -1,0 +1,111 @@
+2026-07-21T20:32:49.219302Z  WARN herdr::config::keybinds: config diagnostic invalid keybinding: keys.prefix = "ctrl_b"; using fallback
+2026-07-21T20:32:49.219373Z  WARN herdr::config::keybinds: config diagnostic invalid keybinding: keys.prefix = "ctrl_b"; using fallback
+2026-07-21T20:32:49.219455Z  WARN herdr::config::keybinds: config diagnostic unsafe direct keybinding: keys.close_tab = "&" would intercept typing; use "prefix+&" to require the prefix; disabling binding
+2026-07-21T20:32:49.219792Z  INFO herdr::api::server: api server listening path=/home/elcasnix/.config/herdr/herdr.sock
+2026-07-21T20:32:49.221683Z  WARN herdr::config::keybinds: config diagnostic invalid keybinding: keys.prefix = "ctrl_b"; using fallback
+2026-07-21T20:32:49.221722Z  WARN herdr::config::keybinds: config diagnostic invalid keybinding: keys.prefix = "ctrl_b"; using fallback
+2026-07-21T20:32:49.221776Z  WARN herdr::config::keybinds: config diagnostic unsafe direct keybinding: keys.close_tab = "&" would intercept typing; use "prefix+&" to require the prefix; disabling binding
+2026-07-21T20:32:49.222012Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-07-21T20:32:49.248556Z  WARN herdr::config::keybinds: config diagnostic invalid keybinding: keys.prefix = "ctrl_b"; using fallback
+2026-07-21T20:32:49.248570Z  WARN herdr::config::keybinds: config diagnostic invalid keybinding: keys.prefix = "ctrl_b"; using fallback
+2026-07-21T20:32:49.248601Z  WARN herdr::config::keybinds: config diagnostic unsafe direct keybinding: keys.close_tab = "&" would intercept typing; use "prefix+&" to require the prefix; disabling binding
+2026-07-21T20:32:49.249138Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-21T20:32:49.249294Z  WARN herdr::config::keybinds: config diagnostic invalid keybinding: keys.prefix = "ctrl_b"; using fallback
+2026-07-21T20:32:49.249297Z  WARN herdr::config::keybinds: config diagnostic invalid keybinding: keys.prefix = "ctrl_b"; using fallback
+2026-07-21T20:32:49.249308Z  WARN herdr::config::keybinds: config diagnostic unsafe direct keybinding: keys.close_tab = "&" would intercept typing; use "prefix+&" to require the prefix; disabling binding
+2026-07-21T20:32:49.249446Z  WARN herdr::config::keybinds: config diagnostic invalid keybinding: keys.prefix = "ctrl_b"; using fallback
+2026-07-21T20:32:49.249447Z  WARN herdr::config::keybinds: config diagnostic invalid keybinding: keys.prefix = "ctrl_b"; using fallback
+2026-07-21T20:32:49.249453Z  WARN herdr::config::keybinds: config diagnostic unsafe direct keybinding: keys.close_tab = "&" would intercept typing; use "prefix+&" to require the prefix; disabling binding
+2026-07-21T20:32:49.250968Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-07-21T20:32:49.251635Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=192903
+2026-07-21T20:32:49.251740Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w1" pane_id=1
+2026-07-21T20:32:49.251745Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-21T20:32:49.251752Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-21T20:32:49.251759Z  INFO herdr::server::headless: created startup workspace cwd=/home/elcasnix/Projects/dotfiles
+2026-07-21T20:32:49.251805Z  INFO herdr::server::headless: client protocol socket listening path=/home/elcasnix/.config/herdr/herdr-client.sock
+2026-07-21T20:32:49.251821Z  INFO herdr::server::headless: herdr server started api_socket=/home/elcasnix/.config/herdr/herdr.sock client_socket=/home/elcasnix/.config/herdr/herdr-client.sock
+2026-07-21T20:32:49.251828Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=192881
+2026-07-21T20:32:49.328213Z  INFO herdr::logging: update available event="update.available" subsystem="update" outcome="ok" version="0.7.5"
+2026-07-21T20:32:49.328229Z  INFO herdr::update: new stable build available at https://github.com/ogulcancelik/herdr/releases/download/v0.7.5/herdr-linux-x86_64
+2026-07-21T20:32:49.328298Z  INFO herdr::update: auto-update check: 0.7.5 available, waiting for explicit install
+2026-07-21T20:32:49.328676Z  INFO herdr::server::headless: client connected client_id=2 cols=123 rows=36 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-21T20:32:54.252953Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:31:08.251286Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:31:08.608556Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:32:58.739616Z  INFO herdr::server::headless: client resize client_id=2 cols=130 rows=38 cell_width_px=0 cell_height_px=0
+2026-07-21T21:32:58.839677Z  INFO herdr::server::headless: client resize client_id=2 cols=134 rows=39 cell_width_px=0 cell_height_px=0
+2026-07-21T21:32:58.939791Z  INFO herdr::server::headless: client resize client_id=2 cols=138 rows=40 cell_width_px=0 cell_height_px=0
+2026-07-21T21:32:59.039976Z  INFO herdr::server::headless: client resize client_id=2 cols=144 rows=43 cell_width_px=0 cell_height_px=0
+2026-07-21T21:32:59.139996Z  INFO herdr::server::headless: client resize client_id=2 cols=151 rows=45 cell_width_px=0 cell_height_px=0
+2026-07-21T21:32:59.240095Z  INFO herdr::server::headless: client resize client_id=2 cols=156 rows=47 cell_width_px=0 cell_height_px=0
+2026-07-21T21:33:28.072878Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-21T21:33:28.075065Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 1, signal: None }"
+2026-07-21T21:33:28.086135Z  INFO herdr::pane: pane session terminated pane=1 pid=192903 signal=Hangup
+2026-07-21T21:33:28.086466Z  WARN herdr::app::actions: PaneDied for unknown pane pane=1
+2026-07-21T21:33:28.086733Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=46 cols=130 scrollback_limit_bytes=10000000
+2026-07-21T21:33:28.089260Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=199584
+2026-07-21T21:33:28.089534Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w2" pane_id=2
+2026-07-21T21:33:28.089556Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-21T21:33:28.089630Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-21T21:33:33.136116Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:33:39.372706Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=46 cols=130 scrollback_limit_bytes=10000000
+2026-07-21T21:33:39.376066Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=199668
+2026-07-21T21:33:39.376422Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-21T21:33:39.376612Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-21T21:33:44.378010Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:34:20.637640Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=4 rows=46 cols=130 scrollback_limit_bytes=10000000
+2026-07-21T21:34:20.641141Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=4 pid=199812
+2026-07-21T21:34:20.641691Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-21T21:34:25.644326Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:34:26.671127Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=5 rows=46 cols=65 scrollback_limit_bytes=10000000
+2026-07-21T21:34:26.674737Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=5 pid=199889
+2026-07-21T21:34:26.675296Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-21T21:34:30.664768Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-21T21:34:35.667316Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:34:44.169769Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-21T21:34:49.172938Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:34:53.769504Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 127, signal: None }"
+2026-07-21T21:34:53.769790Z  INFO herdr::pane: pane session terminated pane=3 pid=199668 signal=Hangup
+2026-07-21T21:34:58.772430Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:34:59.397238Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=4 status="ExitStatus { code: 0, signal: None }"
+2026-07-21T21:34:59.397416Z  INFO herdr::pane: pane session terminated pane=4 pid=199812 signal=Hangup
+2026-07-21T21:35:01.110457Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=5 status="ExitStatus { code: 0, signal: None }"
+2026-07-21T21:35:01.110583Z  INFO herdr::pane: pane session terminated pane=5 pid=199889 signal=Hangup
+2026-07-21T21:35:06.111834Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:35:10.552449Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-07-21T21:45:02.638442Z  INFO herdr::server::headless: client connected client_id=4 cols=156 rows=47 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-21T21:45:24.727936Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=6 rows=46 cols=130 scrollback_limit_bytes=10000000
+2026-07-21T21:45:24.731616Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=6 pid=203044
+2026-07-21T21:45:24.732065Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-21T21:45:24.732280Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-21T21:45:29.735409Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:45:30.606931Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=7 rows=46 cols=130 scrollback_limit_bytes=10000000
+2026-07-21T21:45:30.610730Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=7 pid=203100
+2026-07-21T21:45:30.611258Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-21T21:45:33.871257Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=8 rows=46 cols=65 scrollback_limit_bytes=10000000
+2026-07-21T21:45:33.874930Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=8 pid=203170
+2026-07-21T21:45:33.875469Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-21T21:45:38.877274Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:47:52.978021Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-21T21:47:57.980066Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:48:05.868485Z  INFO herdr::pane: agent changed pane=6 previous_agent=None agent=Some(Claude) process=claude pgid=Some(204482)
+2026-07-21T21:48:16.064640Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-21T21:48:21.067873Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:48:39.438803Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:49:10.792240Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-21T21:49:15.794079Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:50:10.819302Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-21T21:50:15.823889Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:51:48.492565Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-21T21:51:53.495356Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:53:18.512610Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:53:18.715921Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:54:10.149375Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-21T21:54:15.151844Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:54:35.943365Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-21T21:54:38.014632Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:54:40.946356Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:54:58.007886Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t3"
+2026-07-21T21:55:03.011078Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/elcasnix/.config/herdr/session.json workspaces=1
+2026-07-21T21:57:03.827931Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:57:37.639749Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]

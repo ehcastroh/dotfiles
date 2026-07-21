@@ -1,0 +1,82 @@
+{
+  "version": 3,
+  "workspaces": [
+    {
+      "id": "w2",
+      "custom_name": null,
+      "identity_cwd": "/home/elcasnix",
+      "public_pane_numbers": {
+        "8": 7,
+        "7": 6,
+        "6": 5,
+        "2": 1
+      },
+      "next_public_pane_number": 8,
+      "public_tab_numbers": [
+        1,
+        3
+      ],
+      "next_public_tab_number": 4,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 2
+          },
+          "panes": {
+            "2": {
+              "cwd": "/home/elcasnix"
+            }
+          },
+          "zoomed": false,
+          "focused": 2,
+          "root_pane": 2
+        },
+        {
+          "custom_name": "dotfiles as well",
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 6
+              },
+              "second": {
+                "Split": {
+                  "direction": "Vertical",
+                  "ratio": 0.5,
+                  "first": {
+                    "Pane": 7
+                  },
+                  "second": {
+                    "Pane": 8
+                  }
+                }
+              }
+            }
+          },
+          "panes": {
+            "7": {
+              "cwd": "/home/elcasnix/Projects/dotfiles/home/.claude"
+            },
+            "6": {
+              "cwd": "/home/elcasnix/Projects/dotfiles"
+            },
+            "8": {
+              "cwd": "/home/elcasnix/Projects"
+            }
+          },
+          "zoomed": false,
+          "focused": 8,
+          "root_pane": 6
+        }
+      ],
+      "active_tab": 1
+    }
+  ],
+  "active": 0,
+  "selected": 0,
+  "sidebar_width": 26,
+  "sidebar_section_split": 0.5,
+  "collapsed_space_keys": []
+}

@@ -1,0 +1,28 @@
+2026-07-21T20:32:49.266291Z  WARN herdr::config::keybinds: config diagnostic invalid keybinding: keys.prefix = "ctrl_b"; using fallback
+2026-07-21T20:32:49.266347Z  WARN herdr::config::keybinds: config diagnostic invalid keybinding: keys.prefix = "ctrl_b"; using fallback
+2026-07-21T20:32:49.266396Z  WARN herdr::config::keybinds: config diagnostic unsafe direct keybinding: keys.close_tab = "&" would intercept typing; use "prefix+&" to require the prefix; disabling binding
+2026-07-21T20:32:49.266519Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=192880
+2026-07-21T20:32:49.266525Z  INFO herdr::client: connecting to server path=/home/elcasnix/.config/herdr/herdr-client.sock
+2026-07-21T20:32:49.328453Z  INFO herdr::client: handshake succeeded version=16 encoding=SemanticFrame
+2026-07-21T21:31:08.250868Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:31:08.251056Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:31:08.608133Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:31:08.608311Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:45:02.454210Z  WARN herdr::config::keybinds: config diagnostic invalid keybinding: keys.prefix = "ctrl_b"; using fallback
+2026-07-21T21:45:02.454258Z  WARN herdr::config::keybinds: config diagnostic invalid keybinding: keys.prefix = "ctrl_b"; using fallback
+2026-07-21T21:45:02.454309Z  WARN herdr::config::keybinds: config diagnostic unsafe direct keybinding: keys.close_tab = "&" would intercept typing; use "prefix+&" to require the prefix; disabling binding
+2026-07-21T21:45:02.454499Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=202979
+2026-07-21T21:45:02.454526Z  INFO herdr::client: connecting to server path=/home/elcasnix/.config/herdr/herdr-client.sock
+2026-07-21T21:45:02.638331Z  INFO herdr::client: handshake succeeded version=16 encoding=SemanticFrame
+2026-07-21T21:48:39.438434Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:48:39.438567Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:53:18.512189Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:53:18.512299Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:53:18.715563Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:53:18.715683Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:54:38.014132Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:54:38.014322Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:57:03.827586Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:57:03.827724Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:57:37.639431Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-21T21:57:37.639570Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
