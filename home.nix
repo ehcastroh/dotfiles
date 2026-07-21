@@ -5,7 +5,10 @@
   home.homeDirectory = "/home/elcasnix";
   home.stateVersion = "25.11";
 
-  home.packages = [ pkgs-unstable.neovim ];
+  home.packages = [
+    pkgs-unstable.neovim 
+    pkgs-unstable.herdr
+    ];
 
   assertions = [{
     assertion = pkgs.lib.versionAtLeast pkgs-unstable.neovim.version "0.12.3";
