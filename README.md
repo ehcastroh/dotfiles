@@ -1,6 +1,6 @@
 # dotfiles
 
-A reproducible environment for building with AI coding agents, built atop [NixOS and Nix Flakes](https://nixos.wiki/wiki/Flakes). The OS, shell, editor, terminal, and agent rules are all declared as code and pinned to exact versions, so one command reproduces the whole setup on any machine — and rolls it back if an agent ever breaks something. 
+A reproducible multiplexer environment for building with AI coding agents, built atop [NixOS and Nix Flakes](https://nixos.wiki/wiki/Flakes). The OS, shell, editor, terminal, and agent rules are all declared as code and pinned to exact versions, so one command reproduces the whole setup on any machine — and rolls it back if an agent ever breaks something. 
 
 ---
 
