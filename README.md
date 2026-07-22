@@ -98,6 +98,37 @@ After the build: open a new terminal for zsh + starship, launch `nvim` (lazy.nvi
 | [Claude Code](https://github.com/anthropics/claude-code) | AI coding agent (rules in `home/AGENTS.md`) |
 | [Starship](https://starship.rs/) | Shell prompt |
 
+
+## Project Memory (Multi-Agent)
+
+Two layers of agent memory apply inside any project:
+
+- **Global** — `home/AGENTS.md`, symlinked to `~/.claude/CLAUDE.md`, `~/.codex/AGENTS.md`, and `~/.config/opencode/AGENTS.md`. Defines *how agents behave* (style, standards, accountability). Applies everywhere, loaded automatically.
+- **Project** — a memory file in the project root. Defines *what this project is* (domain, layout, conventions). Applies only within that project. Claude Code loads it automatically alongside the global rules — no setup required for Claude alone.
+
+Because different agents look for different filenames (Claude reads `CLAUDE.md`, Codex and OpenCode read `AGENTS.md`), a project that uses more than one agent needs both names to resolve to the same project-memory content. Symlink them in the project root so one file feeds every agent:
+
+```bash
+cd ~/Projects/CATEGORY/PROJECT
+
+# Author the project memory once (any name; AGENTS.md used here as the source):
+$EDITOR AGENTS.md
+
+# Point the Claude-specific filename at it:
+ln -s AGENTS.md CLAUDE.md
+
+# Commit both to the PROJECT repo (not this dotfiles repo — project memory
+# is context for that codebase and travels with it):
+git add AGENTS.md CLAUDE.md
+git commit -m "Add shared project memory for Claude, Codex, and OpenCode"
+```
+
+Notes:
+
+- This is a **within-project** symlink (relative, committed to the project). It is unrelated to the global memory above — keep global and project content distinct: global = behavior, project = context. The two layers stack; agents read both.
+- A relative link (`ln -s AGENTS.md CLAUDE.md`, not an absolute path) keeps it valid when the project is cloned elsewhere.
+- Verify inside Claude Code with `/memory` — it lists every memory file currently loaded, so you can confirm both the global (via `~/.claude/CLAUDE.md`) and the project file are active.
+
 ---
 
 ## Reference
