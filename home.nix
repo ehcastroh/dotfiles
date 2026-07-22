@@ -8,6 +8,7 @@
   home.packages = [
     pkgs-unstable.neovim 
     pkgs-unstable.herdr
+    nodejs_20
     ];
 
   assertions = [{
