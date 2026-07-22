@@ -1,7 +1,6 @@
-# Agent Rules
-## Global Memory
+# Global Memory: Instructions for all agents across all scenarios.
 
-**INSTUCTIONS**
+**Agent Rules**
 
 - Never use em-dash. Use plain dash instead.
 - When writing commit messages, never auto-add your agent's name as co-author.
