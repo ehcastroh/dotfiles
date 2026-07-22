@@ -1,6 +1,6 @@
 # dotfiles
 
-NixOS + Home Manager configuration using [Nix Flakes](https://nixos.wiki/wiki/Flakes). Declarative, reproducible, version-controlled system setup.
+A reproducible environment for building with AI coding agents, built atop [NixOS and Nix Flakes](https://nixos.wiki/wiki/Flakes). The OS, shell, editor, terminal, and agent rules are all declared as code and pinned to exact versions, so one command reproduces the whole setup on any machine — and rolls it back if an agent ever breaks something. 
 
 ---
 
@@ -105,10 +105,8 @@ After the build: open a new terminal for zsh + starship, launch `nvim` (lazy.nvi
 - [Keybindings reference](docs/keybindings.md) - all shortcuts across GNOME, Zsh, Herdr, and Neovim
 - ![Keybindings card](docs/keybindings.png)
 
-<!-- VERIFY: create docs/keybindings.md and docs/keybindings.png, or remove the two lines above until they exist -->
-
 ---
 
 ## Credits
 
-Setup and agentic environment adapted from [Kun Chen](https://github.com/kunchenguid)'s walkthrough.  <!-- VERIFY: correct author handle -->
+Setup and agentic environment adapted from [Kun Chen](https://github.com/kunchenguid)'s walkthrough.  
