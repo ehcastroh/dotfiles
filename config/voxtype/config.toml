@@ -259,12 +259,12 @@ on_recording_start = false
 on_recording_stop = false
 
 # Show notification with transcribed text after transcription completes
-on_transcription = true
+on_transcription = false
 
 # Notification urgency level: "low", "normal", or "critical".
 # On GNOME, "low" notifications are delivered to the drawer without a popup banner.
 # Use "normal" (default) to ensure notifications appear as banners.
-# urgency = "normal"
+urgency = "low"
 
 # [text]
 # Text processing options (word replacements, spoken punctuation)
@@ -291,7 +291,6 @@ on_transcription = true
 # - native: SCTK + wgpu + egui frontend
 # - quickshell: QML frontend with recipe/style customization
 frontend = "gtk4"
-enabled = false
 
 # Quickshell style customization. These fields are ignored by gtk4/native.
 # style can be "default", an installed package name, or a package path.
@@ -320,7 +319,7 @@ layout = "compact"
 # plugin_path = "/path/to/voxtype-osd-package"
 
 # Declarative Quickshell visual recipe. Layers render in order.
-# [[osd.visual.layers]]
+# [[osd.visual.layers]
 # type = "bars"       # shadow, waveform, bars, pulse, ring, meter, background, icon, label
 # source = "peak"     # peak, rms, vad, state
 # color = "accent"    # Omarchy token or literal color
