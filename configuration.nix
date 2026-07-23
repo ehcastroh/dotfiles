@@ -147,6 +147,7 @@
       "networkmanager" # manage network connections without sudo
       "wheel"          # sudo access
       "input"          # synthetic keystrokes
+      "uinput"         # voice to text
     ];
 
     # [ADDED] Zsh as login shell — required for the Home Manager zsh setup

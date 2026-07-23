@@ -87,9 +87,16 @@
   
   # ---- VoxType ----
   systemd.user.services.voxtype = {
-    Unit.Description = "Voxtype dictation daemon";
-    Service.ExecStart = "${voxtype-pkgs.vulkan}/bin/voxtype daemon";
-    Install.WantedBy = [ "default.target" ];
+    Unit = {
+      Description = "Voxtype dictation daemon";
+      After = [ "graphical-session.target" ];
+      PartOf = [ "graphical-session.target" ];
+    };
+    Service = {
+      ExecStart = "${voxtype-pkgs.vulkan}/bin/voxtype daemon";
+      Restart = "on-failure";
+    };
+    Install.WantedBy = [ "graphical-session.target" ];
   };
 
   # ---- NeoVIM ----
