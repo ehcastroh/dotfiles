@@ -33,7 +33,7 @@ modifiers = []
 # Modifier key to select secondary model (evdev input mode only)
 # When held while pressing the hotkey, uses whisper.secondary_model instead
 # Example: model_modifier = "LEFTSHIFT"  # Shift+hotkey uses secondary model
-# model_modifier = "LEFTSHIFT"
+model_modifier = "LEFTSHIFT"
 
 [audio]
 # Audio input device ("default" uses system default)
@@ -84,7 +84,8 @@ max_duration_secs = 60
 # .en models are English-only but faster and more accurate for English
 # large-v3-turbo is faster than large-v3 with minimal accuracy loss (recommended for GPU)
 # Or provide absolute path to a custom .bin model file
-model = "base.en"
+# model = "base.en"
+model = "large-v3-turbo"
 
 # Language for transcription
 # Options:
@@ -116,23 +117,24 @@ translate = false
 # Initial prompt to provide context for transcription
 # Use this to hint at terminology, proper nouns, or formatting conventions.
 # Example: "Technical discussion about Rust, TypeScript, and Kubernetes."
-# initial_prompt = ""
+initial_prompt = "Technical discussion about NixOS, Nix flakes, Home Manager, Neovim, WezTerm, zsh, Claude Code, Git, and Rust. Terms include dotfiles, nixpkgs, systemd, symlink, repo, and CLI."
 
 # --- Multi-model settings ---
 #
 # Secondary model for difficult audio (used with hotkey.model_modifier or CLI --model)
 # secondary_model = "large-v3-turbo"
-#
+secondary_model = "base.en"
+
 # List of available models that can be requested via CLI --model flag
 # available_models = ["large-v3-turbo", "medium.en"]
 #
 # Maximum models to keep loaded in memory (LRU eviction when exceeded)
 # Default: 2 (primary + one secondary). Only applies when gpu_isolation = false.
-# max_loaded_models = 2
+max_loaded_models = 2
 #
 # Seconds before unloading idle secondary models (0 = never auto-unload)
 # Default: 300 (5 minutes). Only applies when gpu_isolation = false.
-# cold_model_timeout_secs = 300
+cold_model_timeout_secs = 0
 
 # --- Eager processing settings ---
 #
