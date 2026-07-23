@@ -1,4 +1,4 @@
-{ config, pkgs, pkgs-unstable, ... }:
+{ config, pkgs, pkgs-unstable, voxtype-pkgs, ... }:
 
 {
   home.username = "elcasnix";
@@ -6,9 +6,11 @@
   home.stateVersion = "25.11";
 
   home.packages = [
-    pkgs-unstable.neovim 
+    pkgs-unstable.neovim
     pkgs-unstable.herdr
     pkgs.nodejs_20
+    voxtype-pkgs.vulkan  # Vulcan works NVIDIA w/out CUDA
+    voxtype-pkgs.osd-gtk4
     ];
 
   assertions = [{
@@ -29,12 +31,14 @@
   # ---- Agent memory: one file, symlinked to every harness --------------------
   home.file.".claude/CLAUDE.md".source =
     config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.dotfiles/home/AGENTS.md";
-
   home.file.".codex/AGENTS.md".source =
     config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.dotfiles/home/AGENTS.md";
-
   home.file.".config/opencode/AGENTS.md".source =
     config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.dotfiles/home/AGENTS.md";
+
+  # ---- Additional Functionality ---------------------------------------------
+  home.file.".config/voxtype".source =
+    config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.dotfiles/config/voxtype";
 
   # ---- Shell ----------------------------------------------------------------
   programs.zsh = {
@@ -80,6 +84,14 @@
       name = "Open WezTerm";
     };
   };
+  
+  # ---- VoxType ----
+  systemd.user.services.voxtype = {
+    Unit.Description = "Voxtype dictation daemon";
+    Service.ExecStart = "${voxtype-pkgs.vulkan}/bin/voxtype daemon";
+    Install.WantedBy = [ "default.target" ];
+  };
 
+  # ---- NeoVIM ----
   home.sessionVariables = { EDITOR = "nvim"; };
 }

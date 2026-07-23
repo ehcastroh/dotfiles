@@ -132,6 +132,9 @@
 
   # ---- SSH (off; uncomment to enable remote access) ----
   # services.openssh.enable = true;
+  
+  # ---- Voice ----
+  hardware.uinput.enable = true;  # uinput device for synthetic keystrokes
 
   # ===========================================================================
   # 8. USERS & SHELL
@@ -143,6 +146,7 @@
     extraGroups = [
       "networkmanager" # manage network connections without sudo
       "wheel"          # sudo access
+      "input"          # synthetic keystrokes
     ];
 
     # [ADDED] Zsh as login shell — required for the Home Manager zsh setup
@@ -231,6 +235,8 @@
     nil         # Nix language server (LSP for editing .nix files)
     wl-clipboard # Wayland clipboard — required for Neovim `clipboard=unnamedplus`
     yt-dlp      # download video/subtitles (.vtt)
+    dotool      # typing backend for GNOME wayland
+    libnotify   # desktop notifications
 
     # ---- Development environments ----
     direnv      # per-directory environments via .envrc

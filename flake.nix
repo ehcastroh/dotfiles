@@ -9,10 +9,11 @@
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     home-manager.url = "github:nix-community/home-manager/release-25.11";
+    voxtype.url = "github:peteonrails/voxtype";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, nixpkgs-unstable, }:
+  outputs = inputs@{ self, nixpkgs, home-manager, nixpkgs-unstable, voxtype, }:
   {
     # "nixos" = your hostname (networking.hostName). Rename both together if you
     # ever change it, or pass --flake .#nixos explicitly.
@@ -27,6 +28,7 @@
           home-manager.useUserPackages = true;
           home-manager.extraSpecialArgs = {
             pkgs-unstable = nixpkgs-unstable.legacyPackages."x86_64-linux";
+            voxtype-pkgs = voxtype.packages."x86_64-linux";
             };
           # "This is the key" — this user is managed by home.nix
           home-manager.users.elcasnix = import ./home.nix;
