@@ -95,6 +95,7 @@
     Service = {
       ExecStart = "${voxtype-pkgs.vulkan}/bin/voxtype daemon";
       Restart = "on-failure";
+      RestartSec = 3;
     };
     Install.WantedBy = [ "graphical-session.target" ];
   };
