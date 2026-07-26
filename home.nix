@@ -60,6 +60,7 @@
 	name = "eliascasher";
     	email = "ehcastroh@berkeley.edu";
   	};
+    extraConfig.url."git@github.com:".insteadOf = "https://github.com/";
   };
 
   # ---- starship ----
