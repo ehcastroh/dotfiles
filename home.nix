@@ -8,6 +8,7 @@
   home.packages = [
     pkgs-unstable.neovim
     pkgs-unstable.herdr
+    pkgs-unstable.opencode
     pkgs.nodejs_20
     voxtype-pkgs.vulkan  # Vulcan works NVIDIA w/out CUDA
     voxtype-pkgs.osd-gtk4
