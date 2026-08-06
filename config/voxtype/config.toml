@@ -38,7 +38,7 @@ model_modifier = "LEFTSHIFT"
 [audio]
 # Audio input device ("default" uses system default)
 # List devices with: pactl list sources short
-device = "default"
+device = "sysdefault:CARD=C200"
 
 # Sample rate in Hz (whisper expects 16000)
 sample_rate = 16000

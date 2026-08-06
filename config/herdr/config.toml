@@ -231,6 +231,7 @@ copy_mode = "prefix+y"
 # accent = "cyan"
 
 # Background notification popup delivery
+agent_panel_sort = "spaces"
 [ui.toast]
 # off = disable pop-up notifications
 # herdr = show in-app toasts
